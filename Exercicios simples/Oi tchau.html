@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos em VUEJS</title>
+</head>
+<body>
+    <div id="exemplo3">
+        <button v-on:click="say('Oi')">Diga oi</button>        
+        <button v-on:click="say('Tchau')">Diga tchau</button>        
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script>
+        var app = new Vue({
+            el: '#exemplo3',
+            data: {
+                
+            },
+            methods:{
+                say: function (message){
+                    alert(message)
+                }
+            }
+
+        })
+    </script>
+    
+</body>
+</html>
